@@ -308,3 +308,7 @@ var timeColor = function () {
     }
 };
 timeColor();
+setInterval(() => {
+    timeColor();
+}, 1000);
+
