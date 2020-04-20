@@ -161,6 +161,150 @@ setInterval(function() {
 }, 1000);
 
 // check to see if its the current hour
-var currentHour = moment().format(hh) 
-console.log(currentHour)
+var timeColor = function () {
+    var currentHour = moment().format("MM DD YY HH") 
+    // 7 am
+    var seven = moment().format("MM DD YY 07")
+    if (currentHour > seven) {
+        $("#seven").addClass("bg-secondary")
+    } 
+    else if (currentHour === seven){
+        $("#seven").addClass("bg-warning")
+    }
+    else if (currentHour < seven) {
+        $("#seven").addClass("bg-success")
+    }
 
+    // 8 am
+    var eight = moment().format("MM DD YY 08")
+    if (currentHour > eight) {
+        $("#eight").addClass("bg-secondary")
+    } 
+    else if (currentHour === eight){
+        $("#eight").addClass("bg-warning")
+    }
+    else if (currentHour < eight) {
+        $("#eight").addClass("bg-success")
+    }
+
+    // 9 am
+    var nine = moment().format("MM DD YY 09")
+    if (currentHour > nine) {
+        $("#nine").addClass("bg-secondary")
+    } 
+    else if (currentHour === nine){
+        $("#nine").addClass("bg-warning")
+    }
+    else if (currentHour < nine) {
+        $("#nine").addClass("bg-success")
+    }
+
+    //10 am
+    var ten = moment().format("MM DD YY 10")
+    if (currentHour > ten) {
+        $("#ten").addClass("bg-secondary")
+    } 
+    else if (currentHour === ten){
+        $("#ten").addClass("bg-warning")
+    }
+    else if (currentHour < ten) {
+        $("#ten").addClass("bg-success")
+    }
+
+    // 11 am
+    var eleven = moment().format("MM DD YY 11")
+    if (currentHour > eleven) {
+        $("#eleven").addClass("bg-secondary")
+    } 
+    else if (currentHour === eleven){
+        $("#eleven").addClass("bg-warning")
+    }
+    else if (currentHour < eleven) {
+        $("#eleven").addClass("bg-success")
+    }
+
+    // 12 pm
+    var twelve = moment().format("MM DD YY 12")
+    if (currentHour > twelve) {
+        $("#twelve").addClass("bg-secondary")
+    } 
+    else if (currentHour === twelve){
+        $("#twelve").addClass("bg-warning")
+    }
+    else if (currentHour < twelve) {
+        $("#twelve").addClass("bg-success")
+    }
+
+    // 1 pm
+    var one = moment().format("MM DD YY 13")
+    if (currentHour > one) {
+        $("#one").addClass("bg-secondary")
+    } 
+    else if (currentHour === one){
+        $("#one").addClass("bg-warning")
+    }
+    else if (currentHour < one) {
+        $("#one").addClass("bg-success")
+    }
+
+    // 2 pm
+    var two = moment().format("MM DD YY 14")
+    if (currentHour > two) {
+        $("#two").addClass("bg-secondary")
+    } 
+    else if (currentHour === two){
+        $("#two").addClass("bg-warning")
+    }
+    else if (currentHour < two) {
+        $("#two").addClass("bg-success")
+    }
+
+    // 3 pm
+    var three = moment().format("MM DD YY 15")
+    if (currentHour > three) {
+        $("#three").addClass("bg-secondary")
+    } 
+    else if (currentHour === three){
+        $("#three").addClass("bg-warning")
+    }
+    else if (currentHour < three) {
+        $("#three").addClass("bg-success")
+    }
+
+    // 4 pm
+    var four = moment().format("MM DD YY 16")
+    if (currentHour > four) {
+        $("#four").addClass("bg-secondary")
+    } 
+    else if (currentHour === four){
+        $("#four").addClass("bg-warning")
+    }
+    else if (currentHour < four) {
+        $("#four").addClass("bg-success")
+    } 
+
+    // 5 pm
+    var five = moment().format("MM DD YY 17")
+    if (currentHour > five) {
+        $("#five").addClass("bg-secondary")
+    } 
+    else if (currentHour === five){
+        $("#five").addClass("bg-warning")
+    }
+    else if (currentHour < five) {
+        $("#five").addClass("bg-success")
+    }
+
+    // 6 pm
+    var six = moment().format("MM DD YY 18")
+    if (currentHour > six) {
+        $("#six").addClass("bg-secondary")
+    } 
+    else if (currentHour === six){
+        $("#six").addClass("bg-warning")
+    }
+    else if (currentHour < six) {
+        $("#six").addClass("bg-success")
+    }
+};
+timeColor();
